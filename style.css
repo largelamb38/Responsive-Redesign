@@ -290,9 +290,21 @@
     min-width: 125px;
   }
 
+  h1{
+    font-size: 5vw;
+    padding-top: 5%;
+  }
+
+  h2{
+    font-family: 'Work Sans', sans-serif;
+    font-size:calc(1vw + 5px);
+    line-height: 1;
+  }
+
   h3{
     font-family: 'Work Sans', sans-serif;
   }
+
   h3:hover{
     text-decoration:underline;
     font-family: 'Work Sans', sans-serif;
