@@ -88,6 +88,13 @@ ul{
 .vdsg{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.vdsg img{
+    justify-content: center;
+    align-items: center;
+    width: 75%
 }
 
 .phone img{
