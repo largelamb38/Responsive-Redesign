@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/41af37fec1.js" crossorigin="anonymous"></script>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <meta charset = "utf-8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1">
+        <title>Tennis Star HK</title>
+    </head>
+        <body>
+            <!-- header div-->
+            <div class="top">
+                <div class="titles">
+                    <h1>Tennis Star Hong Kong</h1>
+                    <h2>Shop G24, Rightful Centre, 11-12 Tak Hing Street, Jordan, Kowloon</h2>
+                </div>
+                <div class="logo">
+                    <img src="https://static.wixstatic.com/media/3a047f_6c23e0013ca9433ab4e3c33fcb50c543~mv2.png/v1/fill/w_258,h_252,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/tennisstar_logo_png.png">
+                </div>
+            </div>
+
+            <!-- navigation bar div-->
+            <div class="container2">
+                <div class="bar">
+                    <button class="navbarbutton"> Catalogue</button>
+                </div>
+                <div class="bar">
+                    <button class="navbarbutton"> Overseas Order</button>
+                </div>
+                <div class="bar">
+                    <button class="navbarbutton"> Contact</button>
+                </div>
+                <div class="bar">
+                    <button class="navbarbutton"> How to Order</button>
+                </div>
+            </div>
+
+            <!-- sort,filter, lang, cart div-->
+            <div class="container3">
+                <!-- HTML CODE FOR ON CLICK DROPDOWN BUTTON COPIED FROM https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Sort by...  </button>
+                   
+                    <div id="myDropdown" class="dropdown-content">
+                        <a> Newest</a>
+                        <a> Oldest</a>
+                        <a> Hottest</a>
+                        <a>Price (Low to High)</a>
+                        <a>Price (High to Low)</a>
+                    </div>
+                </div>
+                <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function myFunction() {
+                      document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                    
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                          }
+                        }
+                      }
+                    }
+                    </script>
+
+                <button class="iconbtn"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="iconbtn" style="margin-right: 5%"><i class="fa-solid fa-language"></i></button>
+
+            </div>
+        
+            <!-- product div-->
+            <div class="container1">
+                <div class = "product">
+                    <img src="https://static.wixstatic.com/media/3a047f_479f7f033b954eaabc81d7482cbbb97a~mv2.jpg/v1/fill/w_444,h_444,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/CollageMaker_20210707_224133236.jpg">
+                    <h3 style="font-size: 20px;"> NIKE MEN'S AIR ZOOM VAPOR PRO </h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    <p style="text-align: center; font-size: 20px">Size: US 7, 8.5, 10</p>
+                    <p style="text-align: center; font-size: 40px; line-height: 0vw; font-family: Arial; font-weight: 1200;"><b>$969</b></p>
+                    <button class = "cartbutton">Add to cart!</button>
+                </div>
+                <div class = "product">
+                    <img src="https://static.wixstatic.com/media/3a047f_d071a870fc744f8d80608cdaab601e25~mv2.jpg/v1/fill/w_444,h_444,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/CollageMaker_20210927_223848741.jpg">
+                    <h3 style="font-size: 20px"> NIKE MEN'S REACT VAPOR NXT </h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    <p style="text-align: center; font-size: 20px">Size: US 10-11.5</p>
+                    <p style="text-align: center; font-size: 40px; line-height: 0vw; font-family: Arial; font-weight: 1200;"><b>$1149</b></p>
+                    <button class = "cartbutton">Add to cart!</button>
+                </div>
+                <div class = "product">
+                    <img src="https://static.wixstatic.com/media/3a047f_547e3328f54d442981b53cc031f94638~mv2.jpg/v1/fill/w_444,h_444,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/GridArt_20220414_012312899.jpg">
+                    <h3 style="font-size: 20px"> MIZUNO MEN'S WAVE EXCEED TOUR 5</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    <p style="text-align: center; font-size: 20px">Size: US 7-12</p>
+                    <p style="text-align: center; font-size: 40px; line-height: 0vw; font-family: Arial; font-weight: 1200;"><b>$899</b></p>
+                    <button class = "cartbutton">Add to cart!</button>
+                </div>
+                <div class = "product">
+                    <img src="https://static.wixstatic.com/media/3a047f_a3369df3d9a74fbda707ca92ea6f9657~mv2.jpg/v1/fill/w_440,h_440,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/GridArt_20220314_010705223.jpg">
+                    <h3 style="font-size: 20px">  YONEX MEN'S POWER CUSHION FUSIONREV 4</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    <p style="text-align: center; font-size: 20px">Size: US 8.5-12</p>
+                    <p style="text-align: center; font-size: 40px; line-height: 0vw; font-family: Arial; font-weight: 1200;"><b>$799</b></p>
+                    <button class = "cartbutton">Add to cart!</button>
+                </div>
+                <div class = "product">
+                    <img src="https://static.wixstatic.com/media/3a047f_2b11c6ca8cdc4c07a50514dcf80eb871~mv2.jpg/v1/fill/w_444,h_444,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/GridArt_20220802_115332803.jpg">
+                    <h3 style="font-size: 20px"> ASICS MEN'S GEL-RESOLUTION 8 </h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    <p style="text-align: center; font-size: 20px">Size: US 8-12</p>
+                    <p style="text-align: center; font-size: 40px; line-height: 0vw; font-family: Arial; font-weight: 1200;"><b>$899</b></p>
+                    <button class = "cartbutton">Add to cart!</button>
+                </div>
+                <div class = "product">
+                    <img src="https://static.wixstatic.com/media/3a047f_e19fbdcf949f434584df0620262b0a91~mv2.jpg/v1/fill/w_444,h_444,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/CollageMaker_20210125_020200291.jpg">
+                    <h3 style="font-size: 20px"> ADIDAS MEN'S COURTJAM BOUNCE </h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    <p style="text-align: center; font-size: 20px">Size: US 8.5, 9.5, 11</p>
+                    <p style="text-align: center; font-size: 40px; line-height: 0vw; font-family: Arial; font-weight: 1200;"><b>$539</b></p>
+                    <button class = "cartbutton">Add to cart!</button>
+                </div>
+                <div class = "product">
+                    <img src="https://static.wixstatic.com/media/3a047f_4c94cfd9ad044de4bf9355493378b063~mv2.jpg/v1/fill/w_444,h_444,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/GridArt_20220415_020614603.jpg">
+                    <h3 style="font-size: 20px"> NIKE MEN'S REACT VAPOR NXT </h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    <p style="text-align: center; font-size: 20px">Size: US 10-11.5</p>
+                    <p style="text-align: center; font-size: 40px; line-height: 0vw; font-family: Arial; font-weight: 1200;"><b>$1149</b></p>
+                    <button class = "cartbutton">Add to cart!</button>
+                </div>
+                <div class = "product">
+                    <img src="https://static.wixstatic.com/media/3a047f_3cdede7f051a4e28a1d7985238813cd4~mv2.jpg/v1/fill/w_444,h_444,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/CollageMaker_20211006_033735895.jpg">
+                    <h3 style="font-size: 20px"> ASICS MEN'S GEL-RESOLUTION 8 </h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    <p style="text-align: center; font-size: 20px">Size: US 9</p>
+                    <p style="text-align: center; font-size: 40px; line-height: 0vw; font-family: Arial; font-weight: 1200;"><b>$529</b></p>
+                    <button class = "cartbutton">Add to cart!</button>
+                </div>
+            </div>
+                <!-- pagination bar div-->
+                <div class="pagination" style="padding-bottom: 2.5%">
+                    <div class="page">
+                        <button class="pagebutton"> 1</button>
+                    </div>
+                    <div class="page">
+                        <button class="pagebutton" style="background-color: #391BA0; color:white"> <b>2</b></button>
+                    </div>
+                    <div class="page">
+                        <button class="pagebutton"> 3</button>
+                    </div>
+                    <div class="page">
+                        <button class="pagebutton"> 4</button>
+                    </div>
+                    <div class="page">
+                        <button class="pagebutton"> 5</button>
+                    </div>
+                </div>
+                <!-- contacts page-->
+                <div class="container4">
+                    <div class="text">
+                        <h4>How to order?</h4>
+                        <p>1) Reach out to Jeff on Whatsapp (56485814) </p>
+                        <p>2) Confirm product availability </p>
+                        <p>3) Pay to confirm order </p>
+                        <p>4) Delivery methods: pick up in-store or delivery </p>
+                    </div>
+                    <div class="text">
+                        <h4>Contact</h4>
+                        <p>Phone/Whatsapp: 56485814</p>
+                        <p>Email: tennisstarhk@gmail.com</p>
+                        <p>Facebook: Tennis Star HK</p>
+                    </div>
+                    <div class="text">
+                        <h4>Payment methods</h4>
+                        <img src="visa.png" style="padding-bottom: 2.5%;">
+                        <img src="https://www.nicepng.com/png/full/245-2453801_mastercard-logo-png-transparent-background-mastercard-logo.png">
+                    </div>
+                    <div class="text">
+                        <h4>Location & hours</h4>
+                        <p>Shop G24, Rightful Centre, 11-12 Tak Hing Street, Jordan, Kowloon </p>
+                        <p>Monday - Friday:  6:30 am to 5 pm</p>
+                        <p>Weekends: Closed</p>
+                    </div>
+                </div>
+        </body>
+ 
+</html>
